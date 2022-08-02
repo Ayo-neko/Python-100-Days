@@ -7,14 +7,22 @@ Author: 骆昊
 Date: 2018-03-02
 """
 
-num = int(input('请输入一个正整数: '))
-temp = num
-num2 = 0
-while temp > 0:
-    num2 *= 10
-    num2 += temp % 10
-    temp //= 10
-if num == num2:
-    print('%d是回文数' % num)
+# num = int(input('请输入一个正整数: '))
+# temp = num
+# num2 = 0
+# while temp > 0:
+#     num2 *= 10
+#     num2 += temp % 10
+#     temp //= 10
+# if num == num2:
+#     print('%d是回文数' % num)
+# else:
+#     print('%d不是回文数' % num)
+
+num = int(input('请输入一个正整数：'))
+tmp = list(str(num))
+if tmp[::-1] == tmp:
+    print("{} 是回文数。".format(num))
 else:
-    print('%d不是回文数' % num)
+    print("{} 不是回文数。".format(num))
+

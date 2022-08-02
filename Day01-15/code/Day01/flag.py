@@ -48,6 +48,7 @@ def main():
     # 画国旗主体
     width, height = 540, 360
     draw_rectangle(x, y, width, height)
+
     # 画大星星
     pice = 22
     center_x, center_y = x + 5 * pice, y + height - pice * 5

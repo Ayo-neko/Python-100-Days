@@ -13,17 +13,19 @@ Date: 2018-03-05
 
 
 def myfilter(mystr):
-    return len(mystr) == 6
+    return len(mystr) == 10
 
 
 # help()
+print(abs(-1.2345))
+print(divmod(10, 3))
+print(pow(2, 3))
+print(round(-1.2345, 2))
+
 print(chr(0x9a86))
 print(hex(ord('骆')))
-print(abs(-1.2345))
-print(round(-1.2345))
-print(pow(1.2345, 5))
+
 fruits = ['orange', 'peach', 'durian', 'watermelon']
 print(fruits[slice(1, 3)])
 fruits2 = list(filter(myfilter, fruits))
-print(fruits)
 print(fruits2)
